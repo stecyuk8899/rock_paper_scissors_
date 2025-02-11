@@ -1,6 +1,6 @@
 import random
 
-
+# Коментар 1
 ACTIONS = {0: "Rock", 1: "Paper", 2: "Scissors"}
 VICTORIES = {
     "Rock": "Scissors",  # Rock beats scissors
@@ -17,12 +17,16 @@ def get_user_selection(actions):
     return action
 
 
+# Коментар 2
+# Коментар 3
+# Коментар 4
 def get_computer_selection(actions):
     selection = random.randint(0, len(actions) - 1)
     action = actions[selection]
     return action
 
 
+#
 def get_determine_winner(victories, user_action, computer_action):
     defeats = victories[user_action]
     if user_action == computer_action:
